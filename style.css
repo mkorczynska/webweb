@@ -1,0 +1,264 @@
+﻿body{
+    margin:0;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: 'Montserrat';
+}
+
+header{
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(14, 154, 229, 0.5);
+    z-index: 9999;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    z-index: 9999;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul a{
+    color: black;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 900;
+}
+
+.hero-section{
+    height: 100vh;
+    width:80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h1{
+    margin: 0;
+    width: 40vw;
+    font-weight: 800;
+    font-size: 3rem;
+    z-index: 10;
+}
+
+.hero-image{
+    display: flex;
+    align-items: center;
+    justify-items: end;
+    width: 60vw;
+}
+
+.hero-image>figure{
+    display: flex;
+    justify-content: end;
+    margin: 0;
+}
+
+.hero-image>figure>img{
+    max-width: 120%;
+}
+
+.hero-buttons{
+    width: inherit;
+    display: flex;
+    justify-content: start;
+    margin-top: 1rem;
+}
+
+a.button{
+    padding: 1rem;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main{
+    background-color: white;
+}
+
+section{
+    background-color: white;
+    margin: auto;
+}
+
+article{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    width: 60%;
+    margin: auto;
+}
+
+article h2{
+    font-weight: 600;
+}
+
+article p{
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.offer-section{
+    background-color: whitesmoke;
+}
+
+.offer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.offer{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    padding: 2.5rem;
+    width: 15%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(7, 150, 231, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offer>figure{
+    display: flex;
+    justify-content: center;
+}
+
+.offer>figure>img{
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-info ul{
+    list-style-type: none;
+}
+
+.contact-info ul li{
+    line-height: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    height: 2rem;
+}
+
+form input:focus, form textarea:focus{
+    outline: none;
+}
+
+form input, form textarea{
+    border: none;
+    border-bottom: 3px solid #0093E9;
+    margin-bottom: 1.5rem;
+}
+
+footer{
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .info{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer .info h5{
+    font-size: 1.2rem;
+}
+
+footer .info ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+footer .info-map iframe{
+    border-radius: 10px;
+}
+
+footer .copyright{
+    height: 5vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .copyright p{
+    margin: 0;
+    font-size: .7rem;
+}
+
+@media screen and (max-width: 900px) {
+    .hero-image{
+        display: none;
+    }
+    .offer-container{
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    .offer{
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+    footer .info{
+        flex-direction: column;
+    }
+    footer .info-map iframe{
+        max-width: 100%;
+    }
+}
